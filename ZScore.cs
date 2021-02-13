@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace ZScore
@@ -10,10 +10,14 @@ namespace ZScore
         {
             List<double> sayiDizisi = new List<double>();
             double sayi;
+            int n;
 
-            for (int i = 0; i < 5; i++)
+            Console.Write("Gireceğiniz toplam değer sayısı: ");
+            n = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < n; i++)
             {
-                Console.Write("Sayi{0}: ", i);
+                Console.Write("Sayi{0}: ", i+1);
                 sayi = Convert.ToDouble(Console.ReadLine());
                 sayiDizisi.Add(sayi);
             }
